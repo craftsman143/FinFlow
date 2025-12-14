@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background: #0a2540;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #0a2540, #1e3c72);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    background: #00d4ff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background: #00b4d8;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.light {
+    background: #f4f4f4;
+}
+
+/* FEATURES */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* PRICING */
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.price-card {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.price-card button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #0a2540;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.form button {
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+li.income {
+    color: green;
+}
+
+li.expense {
+    color: red;
+}

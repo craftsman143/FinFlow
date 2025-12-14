@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFlow | Cash Flow Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">FinFlow</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+ <section class="section light">
+    <h2>Cash Flow Dashboard</h2>
+
+    <div class="summary">
+        <div>Balance: <span id="balance">₹0</span></div>
+        <div>Income: <span id="income">₹0</span></div>
+        <div>Expense: <span id="expense">₹0</span></div>
+        <div>30-Day Forecast: <span id="forecast">₹0</span></div>
+    </div>
+
+    <div class="form">
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="addTransaction('income')">Add Income</button>
+        <button onclick="addTransaction('expense')">Add Expense</button>
+    </div>
+
+    <ul id="transactionList"></ul>
+</section>
+
+<section id="home" class="hero">
+    <h1>Intelligent Cash Flow Management</h1>
+    <p>Predict • Control • Optimize your business cash flow</p>
+    <button onclick="getStarted()">Get Started Free</button>
+</section>
+
+<!-- PROBLEM -->
+<section class="section">
+    <h2>The Problem</h2>
+    <p>
+        Small businesses often fail due to poor cash flow management.
+        FinFlow helps businesses gain real-time visibility, predict shortages,
+        and make smarter financial decisions.
+    </p>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section light">
+    <h2>Key Features</h2>
+    <div class="cards">
+        <div class="card">📊 Real-Time Cash Flow Tracking</div>
+        <div class="card">🤖 AI Cash Flow Forecasting</div>
+        <div class="card">🔔 Low Cash Alerts</div>
+        <div class="card">🧾 Invoice Management</div>
+        <div class="card">📈 Financial Health Dashboard</div>
+        <div class="card">🧠 Smart Expense Analysis</div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section">
+    <h2>How FinFlow Works</h2>
+    <ol>
+        <li>Connect your income & expense data</li>
+        <li>Track real-time cash flow</li>
+        <li>Predict future cash position</li>
+        <li>Optimize spending & collections</li>
+    </ol>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section light">
+    <h2>Pricing</h2>
+    <div class="pricing">
+        <div class="price-card">
+            <h3>Free</h3>
+            <p>Basic cash tracking</p>
+            <p>Expense categorization</p>
+            <button>Start Free</button>
+        </div>
+        <div class="price-card">
+            <h3>Pro</h3>
+            <p>Cash flow forecasting</p>
+            <p>Alerts & analytics</p>
+            <button>Upgrade</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: support@finflow.com</p>
+    <p>Website: www.finflow.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 FinFlow | Intelligent Cash Flow Management</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
